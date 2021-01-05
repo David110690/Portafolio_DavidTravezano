@@ -415,7 +415,7 @@ p[data-value]:after {
 	}
 
 .hovereffect a.info:hover {
-  box-shadow: 0 0 5px #662753;
+  box-shadow: 0 0 5px #010120;
   color: black;
   background-color: white;
 }
@@ -451,10 +451,10 @@ p[data-value]:after {
 }
 
 .navbar-toggle {
-	background-color:  #662753;
+	background-color:  #010120;
 }
 .navbar-toggle:focus {
-	background-color:  #662753 !important;
+	background-color:  #010120 !important;
 }
 
 @media only screen and (max-width: 500px) {
@@ -482,8 +482,9 @@ p[data-value]:after {
 		font-size: 16px;
 	}
 	.descripcion span {
-		display: none;
-	}
+		display: inline;
+	}	
+	
 	.descripcion img {
 		padding-top: 0;
 		margin: 0 40%;
