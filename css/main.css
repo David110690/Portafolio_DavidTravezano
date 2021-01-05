@@ -1,0 +1,514 @@
+
+.portada {
+	background-image: url(../img/portada3.jpg) ;
+    background-size: cover;
+    height: 100vh;
+    z-index: 5;
+}
+.opaci {
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu {
+	margin-top: 50px;
+	padding-left: 0px;
+
+	transition: padding , padding-left 1s;
+}
+.menu li {
+	display: inline;
+	margin: 0;
+}
+@font-face {
+  font-family: 'LubalinGraphStdBook';
+  src: url("../fonts/LubalinGraphStd-Book.otf");
+  src: url("../fonts/LubalinGraphStd-Book.otf") format("opentype"), url("../fonts/LubalinGraphStd-Book.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+.menu a {
+	color: white;
+	font-family: "Inconsolata", sans-serif;
+	font-size: 140%;
+	text-decoration: none;
+	margin:15px;
+}
+
+.menu-fixed {
+	position:fixed;
+	top:0;
+	left:0px;
+	padding: 14px;
+	background: linear-gradient(to bottom,#010120 0%,#02295c 100%);
+	margin:0;
+	width:100%;
+	z-index: 1000;
+	padding-left: 400px;
+}
+
+#maquinas {
+	color: white;
+	font-size: 100px;
+	margin: 10% 0 0 0 ;
+	font-family: "Inconsolata" , sans-serif;
+}
+
+
+.descripcion {
+	font-family: "LubalinGraphStdBook", sans-serif;
+	color: #3B4E32;
+	font-size: 22px;
+	text-align: justify;
+}
+.p-50 {
+	padding: 50px 0;
+}
+.pt-60 {
+	padding-top: 60px;
+}
+
+.sobremi {
+	font-family: "Inconsolata" , sans-serif;
+	font-size: 35px;
+	padding-top: 10px;
+}
+.resaltar {
+	background-color: #103152;
+	color: white;
+}
+
+.descripcion img {
+	display: block;
+    padding-top: 21px;
+    margin: 0 46%;
+}
+
+.lista {
+	width: 50%;
+	float: left;
+	list-style-type: none;
+	padding-right: 5.3333333%;
+}
+
+.lista:nth-child(even) { margin-bottom: 5em;}
+
+.habilidad {
+	margin: 0 0 1.5em;
+	border-bottom: 1px solid #ccc;
+	padding: 0 0 .25em;
+	font-family: "LubalinGraphStdBook", sans-serif;
+	font-size: 21px;
+}
+
+
+
+
+progress[value] {
+	/* Get rid of the default appearance */
+	appearance: none;
+
+	/* This unfortunately leaves a trail of border behind in Firefox and Opera. We can remove that by setting the border to none. */
+	border: none;
+
+	/* Add dimensions */
+	width: 100%; height: 20px;
+
+	/* Although firefox doesn't provide any additional pseudo class to style the progress element container, any style applied here works on the container. */
+	  background-color: whiteSmoke;
+	  border-radius: 3px;
+	  box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+
+	/* Of all IE, only IE10 supports progress element that too partially. It only allows to change the background-color of the progress value using the 'color' attribute. */
+	color: royalblue;
+
+	position: relative;
+	margin: 0 0 1.5em;
+}
+
+
+
+progress[value]::-webkit-progress-bar {
+	background-color: whiteSmoke;
+	border-radius: 3px;
+	box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+}
+
+progress[value]::-webkit-progress-value {
+	position: relative;
+
+	background-size: 35px 20px, 100% 100%, 100% 100%;
+	border-radius:3px;
+
+	/* Let's animate this */
+	animation: animate-stripes 5s linear infinite;
+}
+
+/* Fallback technique styles */
+.progress-bar {
+	background-color: whiteSmoke;
+	border-radius: 3px;
+	box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+
+	/* Dimensions should be similar to the parent progress element. */
+	width: 100%; height:20px;
+}
+
+.progress-bar span {
+	background-color: royalblue;
+	border-radius: 3px;
+
+	display: block;
+	text-indent: -9999px;
+}
+
+p[data-value] {
+
+  position: relative;
+}
+
+p[data-value]:after {
+	content: attr(data-value) '%';
+	position: absolute; right:0;
+	font-size: 20px;
+	margin-top: 20px;
+	font-family: "Inconsolata" , sans-serif;
+}
+
+.html5::-webkit-progress-value,
+.python::-webkit-progress-value  {
+	/* Gradient background with Stripes */
+	background-image:
+	-webkit-linear-gradient( 135deg,
+	transparent,
+	transparent 33%,
+	rgba(0,0,0,.1) 33%,
+	rgba(0,0,0,.1) 66%,
+	transparent 66%),
+    -webkit-linear-gradient( top,
+	rgba(255, 255, 255, .25),
+	rgba(0,0,0,.2)),
+    -webkit-linear-gradient( left, #094ba1, #161680);
+}
+
+.css3::-webkit-progress-value,
+.php::-webkit-progress-value
+{
+	/* Gradient background with Stripes */
+	background-image:
+	-webkit-linear-gradient( 135deg,
+	transparent,
+	transparent 33%,
+	rgba(0,0,0,.1) 33%,
+	rgba(0,0,0,.1) 66%,
+	transparent 66%),
+    -webkit-linear-gradient( top,
+	rgba(255, 255, 255, .25),
+	rgba(0,0,0,.2)),
+    -webkit-linear-gradient( left, #094ba1, #161680);
+}
+
+.jquery::-webkit-progress-value,
+.node-js::-webkit-progress-value
+{
+	/* Gradient background with Stripes */
+	background-image:
+	-webkit-linear-gradient( 135deg,
+	 transparent,
+	 transparent 33%,
+	 rgba(0,0,0,.1) 33%,
+	 rgba(0,0,0,.1) 66%,
+	 transparent 66%),
+    -webkit-linear-gradient( top,
+	rgba(255, 255, 255, .25),
+	rgba(0,0,0,.2)),
+     -webkit-linear-gradient( left,  #094ba1, #161680);
+}
+
+/* Similarly, for Mozillaa. Unfortunately combining the styles for different browsers will break every other browser. Hence, we need a separate block. */
+
+
+.contacto {
+	font-family: "Inconsolata" , sans-serif;
+	font-size: 35px;
+	padding-top: 10px;
+	color: white;
+}
+.bg-black{
+	background-color: black;
+
+}
+.separador {
+	width: 56px;
+	margin-bottom: 7px ;
+	margin-left: 48%;
+	border-top: 2px solid #010120;
+}
+.final {
+	padding-top: 0;
+	color: white;
+	font-family: "LubalinGraphStdBook", sans-serif;
+	font-size: 20px;
+}
+.final h3 {
+	margin-top: 0;
+}
+.ico-contacto {
+	color: white;
+	font-family: "Inconsolata" , sans-serif;
+}
+.ico-contacto span {
+	font-family: "Inconsolata" , sans-serif;
+	font-size: 21px;
+}
+.ico-contacto a {
+	color: white;
+	font-size: 21px;
+}
+.bg-green {
+	background: linear-gradient(to bottom,#010120 0%,#02295c 100%);
+	padding: 1em 0em;
+	color: white;
+	font-family: "Inconsolata" , sans-serif;
+	font-size: 21px;
+	font-weight: bold;
+}
+.bg-green a {
+	text-decoration: none;
+	color: white
+}
+.bg-green i {
+	float: right;
+}
+
+.se-pre-con{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../img/preloader.gif) center no-repeat #fff;
+}
+.pl-100 {
+	padding-left: 100px;
+}
+
+
+.appmovil {
+	width: 130px;
+	margin-left: 40%;
+}
+.appdescktop {
+	width: 77%;
+	margin-left: 11.5%;
+}
+.desc-pro {
+	display: block;
+}
+.info-dev {
+	font-size: 28px;
+	color: white;
+	font-family:  "Inconsolata" , sans-serif;
+}
+.subir {
+	font-size: 29px;
+}
+
+.bajar {
+	color: white;
+	margin-top: 25px;
+	animation: shake 1s cubic-bezier(.36,.07,.19,.97) infinite;
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+	perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+.imgHabi {
+	width: 65px;
+	height: 65px;
+}
+
+.imgHabicms {
+	width: 80px;
+	height: 65px;
+}
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  width: 77%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left:  11.5%;
+  background-color: rgba(0,0,0,0.6);
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: translate(460px, -100px) rotate(180deg);
+  -ms-transform: translate(460px, -100px) rotate(180deg);
+  transform: translate(460px, -100px) rotate(180deg);
+  -webkit-transition: all 0.2s 0.4s ease-in-out;
+  transition: all 0.2s 0.4s ease-in-out;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 25px;
+  padding-top: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  font-family: "LubalinGraphStdBook", sans-serif;
+}
+
+.hovereffect a.info {
+	font-size: 20px;
+	color: white;
+	font-family:  "Inconsolata" , sans-serif;
+	border-radius: 8px;
+	display: inline-block;
+	text-decoration: none;
+	padding: 7px 14px;
+	text-transform: uppercase;
+	border: 1px solid #fff;
+	margin: 50px 0 0 0;
+	background-color: transparent;
+	-webkit-transform: translateY(-200px);
+	-ms-transform: translateY(-200px);
+	transform: translateY(-200px);
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	}
+
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #662753;
+  color: black;
+  background-color: white;
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+}
+
+.hovereffect:hover h2 {
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.hovereffect:hover a.info {
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+.navbar-default {
+	background-color: transparent;
+	border: none;
+}
+
+.navbar-toggle {
+	background-color:  #662753;
+}
+.navbar-toggle:focus {
+	background-color:  #662753 !important;
+}
+
+@media only screen and (max-width: 500px) {
+    #maquinas {
+        font-size: 28px;
+    }
+    .info-dev {
+    	font-size: 16px;
+    }
+    .menu-fixed , .banderas {
+    	display: none;
+
+    }
+  	.titulo {
+  		margin-top: 30%;
+  	}
+	.portada {
+		background-position-x: 86%
+	}
+	.menu li {
+		display: block;
+	}
+	.descripcion {
+		margin-top: 19px;
+		font-size: 16px;
+	}
+	.descripcion span {
+		display: none;
+	}
+	.descripcion img {
+		padding-top: 0;
+		margin: 0 40%;
+	}
+	.tols {
+		padding-left: 15px;
+	}
+	.appmovil {
+		margin-left: 30%;
+	}
+	.hovereffect a.info {
+		font-size:  15px;
+	}
+	.hovereffect {
+		margin-top: 60px;
+	}
+	.appdescktop  {
+		height: 230px;
+		width: 280px;
+		margin-left: 5px;
+	}
+	.pl-100 {
+		padding-left: 10px;
+	}
+	.final , .ico-contacto a {
+		font-size: 18px
+	}
+}
