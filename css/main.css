@@ -40,7 +40,7 @@
 	top:0;
 	left:0px;
 	padding: 14px;
-	background: linear-gradient(to bottom,#010120 0%,#02295c 100%);
+	background: linear-gradient(to bottom,#023547 0%,#086080 100%);
 	margin:0;
 	width:100%;
 	z-index: 1000;
@@ -74,7 +74,7 @@
 	padding-top: 10px;
 }
 .resaltar {
-	background-color: #103152;
+	background-color: #023547;
 	color: white;
 }
 
@@ -154,13 +154,7 @@ progress[value]::-webkit-progress-value {
 	width: 100%; height:20px;
 }
 
-.progress-bar span {
-	background-color: royalblue;
-	border-radius: 3px;
 
-	display: block;
-	text-indent: -9999px;
-}
 
 p[data-value] {
 
@@ -173,6 +167,8 @@ p[data-value]:after {
 	font-size: 20px;
 	margin-top: 20px;
 	font-family: "Inconsolata" , sans-serif;
+	text-align: right;
+	color: white;
 }
 
 .html5::-webkit-progress-value,
@@ -188,7 +184,8 @@ p[data-value]:after {
     -webkit-linear-gradient( top,
 	rgba(255, 255, 255, .25),
 	rgba(0,0,0,.2)),
-    -webkit-linear-gradient( left, #094ba1, #161680);
+	-webkit-linear-gradient( left,#023547, #086080);
+	background: linear-gradient(to bottom,#023547 0%,#086080 100%);
 }
 
 .css3::-webkit-progress-value,
@@ -205,7 +202,8 @@ p[data-value]:after {
     -webkit-linear-gradient( top,
 	rgba(255, 255, 255, .25),
 	rgba(0,0,0,.2)),
-    -webkit-linear-gradient( left, #094ba1, #161680);
+    -webkit-linear-gradient( left,#023547, #086080);
+	background: linear-gradient(to bottom,#023547 0%,#086080 100%);
 }
 
 .jquery::-webkit-progress-value,
@@ -222,7 +220,8 @@ p[data-value]:after {
     -webkit-linear-gradient( top,
 	rgba(255, 255, 255, .25),
 	rgba(0,0,0,.2)),
-     -webkit-linear-gradient( left,  #094ba1, #161680);
+    -webkit-linear-gradient( left,#023547, #086080);
+	background: linear-gradient(to bottom,#023547 0%,#086080 100%);
 }
 
 /* Similarly, for Mozillaa. Unfortunately combining the styles for different browsers will break every other browser. Hence, we need a separate block. */
@@ -235,14 +234,14 @@ p[data-value]:after {
 	color: white;
 }
 .bg-black{
-	background-color: black;
+	background-color: #056b90;
 
 }
 .separador {
 	width: 56px;
 	margin-bottom: 7px ;
 	margin-left: 48%;
-	border-top: 2px solid #010120;
+	border-top: 2px solid #023547;
 }
 .final {
 	padding-top: 0;
@@ -266,7 +265,7 @@ p[data-value]:after {
 	font-size: 21px;
 }
 .bg-green {
-	background: linear-gradient(to bottom,#010120 0%,#02295c 100%);
+	background: linear-gradient(to bottom,#023547 0%,#086080 100%);
 	padding: 1em 0em;
 	color: white;
 	font-family: "Inconsolata" , sans-serif;
@@ -288,7 +287,6 @@ p[data-value]:after {
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background: url(../img/preloader.gif) center no-repeat #fff;
 }
 .pl-100 {
 	padding-left: 100px;
